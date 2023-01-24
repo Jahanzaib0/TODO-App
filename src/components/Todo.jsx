@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 const Todo = () => {
-  // for check mark Color
-  //  const [color, setColor] = useState('white');
-  // ***==
   const [data, setdata] = useState(null);
   const [task, setTask] = useState("");
   const [date, setdate] = useState('')
@@ -55,14 +52,7 @@ const Todo = () => {
       getData();
     });
   };
-  // *======*
-  // for update Or Edit Data
-  // const handleEdit = (id) => {
-  //   const url = " http://localhost:9000/Data/" + id;
-  //   fetch(url, {
-  //     method: "PULL",
-  //   }).then;
-  // };
+  
 
   useEffect(() => {
     getData();
